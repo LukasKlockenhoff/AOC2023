@@ -7,9 +7,7 @@ function readInput(filename: string): string[] {
 
 function getCalibrationCode(input: string): number {
     const reverseInputArr = input.split('').reverse();
-    console.log(reverseInputArr);
     const inputArr = input.split('');
-    console.log(inputArr);
     return parseInt(findFirstNumber(inputArr).toString() + findFirstNumber(reverseInputArr));
 }
 
